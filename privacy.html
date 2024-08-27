@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="./tailwindcss.js"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            blue01: '#55679C',
+            blue02: '#7C93C3',
+            blue03: '#1E2A5E',
+            milk: '#E1D7B7'
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body>
+  <style>
+    body * {
+      font-family: 'Open Sans', sans-serif;
+      color: #222;
+    }
+
+    body {
+      background: #eee;
+    }
+
+    #input {
+      resize: none;
+      border: none;
+      outline: none;
+      width: 100%;
+      height: 100%;
+      padding: 0.5em;
+      font-size: 1.15em;
+    }
+
+    #input-wrapper {
+      height: 100%;
+      overflow: hidden;
+      margin-top: 0;
+    }
+
+    #output-wrapper {
+      height: fit-content;
+    }
+
+    #output {
+      font-size: 1.4em;
+      word-break: break-word;
+    }
+
+    #description p:last-child {
+      margin-bottom: 0;
+    }
+
+    #description h1:first-child {
+      margin-top: 0;
+    }
+
+    #background {
+      z-index: -1;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      opacity: 1;
+      /* background-color: #7C93C3; */
+      /* background-size: 20vw; */
+      /* background-size: unset; */
+    }
+
+    #logo {
+      text-align: center;
+      font-size: 5.5vw;
+      font-family: 'Pacifico', cursive;
+      color: white;
+      text-shadow: 0px 1px 2px #444;
+      margin-top: 0.1em;
+      margin-bottom: 0.6em;
+    }
+
+    #description *:not(pre)>code {
+      background: #f1f1f1;
+      font-family: monospace;
+      font-size: 1.1em;
+      padding: 0.3em;
+    }
+
+    #description pre {
+      overflow-x: auto;
+      overflow-y: hidden;
+      padding: 0.5em;
+      background: #f1f1f1;
+      font-family: monospace;
+    }
+
+  </style>
+  <div id="background" class="bg-blue01"></div>
+  <div class="flex justify-between items-center">
+    <div class="min-h-[100vh] w-full md:w-1/2 bg-blue02 flex">
+      <div class="w-full mt-12 px-8 whitespace-normal mx-auto mb-4">
+        <h1 class="text-2xl font-bold mb-4 text-milk">Privacy Policy for Bold Text Generator</h1>
+        <p class="mb-4 text-milk">Effective Date: Aug 27, 2024</p>
+        <p class="text-milk">
+          Welcome to Bold Text Generator. This privacy policy outlines the types of information we collect from our users, how we use it, and the steps we take to protect it.
+        </p>
+      
+        <h2 class="mt-4 text-lg font-bold text-milk">1. Information We Collect</h2>
+        <p class="text-milk">
+          <span class="font-extrabold text-milk">Non-Personal Data:</span> We may collect non-personal data through the use of web cookies. This includes information about your browsing behavior on our website.
+        </p>
+      
+        <h2 class="mt-4 text-lg font-bold text-milk">2. Use of Your Information</h2>
+        <p class="text-milk">
+          The information we collect is used solely for the purpose of improving your experience on our site. We do not share your information with any third parties.
+        </p>
+      
+        <h2 class="mt-4 text-lg font-bold text-milk">3. Data Protection</h2>
+        <p class="text-milk">
+          We take the security of your information seriously and use appropriate technical and organizational measures to protect your data against unauthorized access, theft, and misuse.
+        </p>
+      
+        <h2 class="mt-4 text-lg font-bold text-milk">4. Updates to This Privacy Policy</h2>
+        <p class="text-milk">
+          We may update this privacy policy from time to time. All updates will be posted on this page.
+        </p>
+      
+        <h2 class="mt-4 text-lg font-bold text-milk">5. Contact Us</h2>
+        <p class="mb-4 text-milk">
+          If you have any questions or concerns about our privacy policy or the data we hold about you, please contact us at ada.666de6@proton.me.
+        </p>
+        <a href="/">
+          <button class="text-blue03 hover:bg-blue02 px-4 py-2 rounded-md"><< Bold Text Generator</button>
+        </a>
+      </div>
+    </div>
+    <div class="flex-1 m-auto text-center hidden md:block">
+      <a href="/">
+        <h1 class="text-2xl">🅱🅾🅻🅳 🆃🅴🆇🆃 🅶🅴🅽🅴🆁🅰🆃🅾🆁</h1>
+      </a> 
+    </div>
+
+  </div>
+  
+</body>
+</html>
+
+
