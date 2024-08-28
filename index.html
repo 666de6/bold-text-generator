@@ -129,16 +129,14 @@
 
   <div id="background" class="bg-blue01"></div>
   <div id="scrollToTop"
-    class="hidden text-3xl bg-milk w-10 h-10 rounded-full flex justify-center items-center cursor-pointer fixed bottom-10 right-10">
+    class="hidden text-3xl bg-milk w-10 h-10 rounded-full flex justify-center items-center cursor-pointer fixed bottom-10 right-4">
     🔝
   </div>
 
-  <div class="pt-20 md:pt-28 pb-10 px-10">
+  <div class="pt-20 md:pt-28 pb-10 px-6 md:px-10">
     <div class="w-full max-w-[1000px] m-auto flex flex-col items-center justify-center mb-4">
-      <h2 class="text-2xl md:text-5xl font-bold">🅱🅾🅻🅳 🆃🅴🆇🆃 🅶🅴🅽🅴🆁🅰🆃🅾🆁</h1>
-        <h1 class="text-md mt-2">Generate bold text with our online free bold text generator. Copy and paste to anywhere
-          just in a sec!
-      </h2>
+      <h2 class="text-2xl md:text-5xl font-bold">🅱🅾🅻🅳 🆃🅴🆇🆃 🅶🅴🅽🅴🆁🅰🆃🅾🆁</h2>
+      <h1 class="text-md mt-2">Generate bold text with our online free bold text generator. Copy and paste to anywhere just in a sec!</h1>
     </div>
     <div class="h-40 sticky top-0 pt-2 bg-blue01" style="z-index:10;">
       <div class="w-full max-w-[1000px] rounded-t-md shadow-2xl border-8 border-blue02" id="input-wrapper"
@@ -275,7 +273,7 @@
           AI Sticker Generator
         </a>
       </div>
-      <p class="text-sm">
+      <p class="text-xs">
         Copyright ©
         <span id="copyright"></span>
         Bold Text Generator. All rights reserved.
@@ -356,9 +354,9 @@
         let arr = n.split('\n\n');
         let str = '';
         arr.forEach((i) => {
-          str += `<div onclick='copyToClipboard(\`${i}\`)' class='cursor-pointer white-space pre-wrap outline-none flex justify-between items-center py-2 px-4 rounded-md mt-2 hover:bg-blue02'>
+          str += `<div onclick='copyToClipboard(\`${i}\`)' class='cursor-pointer border-x-4 border-blue02 white-space pre-wrap outline-none flex justify-between items-center py-2 px-4 rounded-md mt-2 hover:bg-blue02'>
             <span class='text-2xl text-milk'>${i}</span>
-            <button class='text-blue01 hover:text-blue03 hover:bg-milk text-sm px-4 pb-1 rounded-md'>copy</button>
+            <button class='hidden md:block text-blue01 hover:text-blue03 hover:bg-milk text-sm px-4 pb-1 rounded-md'>copy</button>
             </div>`
         })
         // n = "<div contenteditable style='outline:none;white-space:pre-wrap;' class='text-lg text-milk py-2 px-4 rounded-md mt-2 hover:bg-blue02'><button onclick='copyFonts(event)'>copy</button>" + n.replace(/\n\n/g,
@@ -1159,7 +1157,7 @@
           let arr = n.split('\n\n');
           let str = '';
           arr.forEach((i) => {
-            str += `<div onclick='copyToClipboard(\`${i}\`)' class='cursor-pointer white-space pre-wrap outline-none flex justify-between items-center py-2 px-4 rounded-md mt-2 hover:bg-blue02'>
+            str += `<div onclick='copyToClipboard(\`${i}\`)' class='cursor-pointer border-x-4 border-blue02 white-space pre-wrap outline-none flex justify-between items-center py-2 px-4 rounded-md mt-2 hover:bg-blue02'>
                 <span class='text-2xl text-milk'>${i}</span>
                 <button class='text-blue01 hover:text-blue03 hover:bg-milk text-sm px-4 pb-1 rounded-md'>copy</button>
                 </div>`
@@ -1184,7 +1182,7 @@
         let str = '';
         arr.forEach((i) => {
           if (!i) return;
-          str += `<div onclick='copyToClipboard(\`${i}\`)' class='cursor-pointer white-space pre-wrap outline-none flex justify-between items-center py-2 px-4 rounded-md mt-2 hover:bg-blue02'>
+          str += `<div onclick='copyToClipboard(\`${i}\`)' class='cursor-pointer border-x-4 border-blue02 white-space pre-wrap outline-none flex justify-between items-center py-2 px-4 rounded-md mt-2 hover:bg-blue02'>
             <span class='text-2xl text-milk'>${i}</span>
             <button class='text-blue01 hover:text-blue03 hover:bg-milk text-sm px-4 pb-1 rounded-md'>copy</button>
             </div>`
