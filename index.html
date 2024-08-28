@@ -1159,7 +1159,7 @@
           arr.forEach((i) => {
             str += `<div onclick='copyToClipboard(\`${i}\`)' class='cursor-pointer border-x-4 border-blue02 white-space pre-wrap outline-none flex justify-between items-center py-2 px-4 rounded-md mt-2 hover:bg-blue02'>
                 <span class='text-2xl text-milk'>${i}</span>
-                <button class='text-blue01 hover:text-blue03 hover:bg-milk text-sm px-4 pb-1 rounded-md'>copy</button>
+                <button class='hidden md:block text-blue01 hover:text-blue03 hover:bg-milk text-sm px-4 pb-1 rounded-md'>copy</button>
                 </div>`
           })
           // n =
@@ -1184,7 +1184,7 @@
           if (!i) return;
           str += `<div onclick='copyToClipboard(\`${i}\`)' class='cursor-pointer border-x-4 border-blue02 white-space pre-wrap outline-none flex justify-between items-center py-2 px-4 rounded-md mt-2 hover:bg-blue02'>
             <span class='text-2xl text-milk'>${i}</span>
-            <button class='text-blue01 hover:text-blue03 hover:bg-milk text-sm px-4 pb-1 rounded-md'>copy</button>
+            <button class='hidden md:block text-blue01 hover:text-blue03 hover:bg-milk text-sm px-4 pb-1 rounded-md'>copy</button>
             </div>`
         })
         return n = str;
