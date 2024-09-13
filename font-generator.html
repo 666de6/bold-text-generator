@@ -367,7 +367,6 @@
     const currentPath = window.location.pathname;
     const links = Array.from(document.getElementById('nav').children).filter(item => item.tagName === 'A');
     for(let i = 0; i < links.length; i++){
-      console.log(links[i]['pathname'])
       if(currentPath === links[i]['pathname']){
         links[i].childNodes[1].className += ' !text-blue03';  
         break;

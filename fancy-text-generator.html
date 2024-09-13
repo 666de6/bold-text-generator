@@ -243,20 +243,20 @@
               <p class="text-sm">In this guide, we’ll explore everything you need to know about fancy text, including how to create it, where to use it, and the benefits it brings.</p>
             </div>
           </a>
-          <!-- <a href="">
-            <div class="cursor-pointer">
-              <img src="./img/ins.jpeg" alt="" class="w-60 rounded-md">
-              <h3 class="text-milk hover:text-blue03 text-sm my-2">How To Post Fancy Text on Instagram?</h3>
-              <p class="text-sm">How To Post Fancy Text on Instagram?</p>
+          <a href="/blog/how-to-post-bold-text-on-facebook.html">
+            <div class="w-48 cursor-pointer">
+              <img src="../img/fb.jpeg" alt="blog - How To Post Bold Text on Facebook" class="w-full rounded-md">
+              <h3 class="text-milk hover:text-blue03 text-sm my-2">How To Post Bold Text on Facebook?</h3>
+              <p class="text-sm">While Facebook doesn't provide a built-in option for bold formatting, there are creative ways to make your text pop. In this article, we'll explore different methods to post bold text on Facebook and introduce a handy bold text generator that can simplify the process.</p>
             </div>
           </a>
-          <a href="">
-            <div class="cursor-pointer">
-              <img src="./img/lkd.jpeg" alt="" class="w-60 rounded-md">
-              <h3 class="text-milk hover:text-blue03 text-sm my-2">How To Post Fancy Text on Linkedin?</h3>
-              <p class="text-sm">fsdfsdkfjks</p>
+          <a href="/blog/10-best-free-font-generators-online.html">
+            <div class="w-48 cursor-pointer">
+              <img src="../img/10best.jpeg" alt="blog - How To Post Bold Text on Facebook" class="w-full rounded-md">
+              <h3 class="text-milk hover:text-blue03 text-sm my-2">10 Best Font Generators Online Free.</h3>
+              <p class="text-sm">In this blog, we'll explore the 10 best free font generators available online, helping you find the perfect font for your needs.</p>
             </div>
-          </a> -->
+          </a>
         </div>
         <!-- <hr class="my-2 border-blue03" /> -->
       </div>
@@ -334,7 +334,6 @@
     const currentPath = window.location.pathname;
     const links = Array.from(document.getElementById('nav').children).filter(item => item.tagName === 'A');
     for(let i = 0; i < links.length; i++){
-      console.log(links[i]['pathname'])
       if(currentPath === links[i]['pathname']){
         links[i].childNodes[1].className += ' !text-blue03';  
         break;
